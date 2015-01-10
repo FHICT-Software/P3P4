@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="217.0" prefWidth="395.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.Lobby">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="217.0" prefWidth="395.0">
+      <children>
+        <TextField fx:id="tfGebruikersnaam" layoutX="160.0" layoutY="40.0" prefWidth="200.0" />
+        <PasswordField fx:id="tfWachtwoord" layoutX="160.0" layoutY="73.0" onKeyPressed="#tfWachtwoordKeyPressed" prefWidth="200.0" />
+        <Button fx:id="btInloggen" layoutX="159.0" layoutY="104.0" mnemonicParsing="false" onAction="#Inloggen" prefWidth="101.0" text="Inloggen" />
+        <Button fx:id="btNieuwAccount" layoutX="83.0" layoutY="153.0" mnemonicParsing="false" onAction="#NieuwAccountGUI" text="Nieuw Account" />
+        <Button fx:id="btAfsluiten" layoutX="230.0" layoutY="153.0" mnemonicParsing="false" onAction="#Afsluiten" prefWidth="101.0" text="Afsluiten" />
+        <Label layoutX="23.0" layoutY="40.0" text="Gebruikersnaam" />
+        <Label layoutX="42.0" layoutY="73.0" text="Wachtwoord" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

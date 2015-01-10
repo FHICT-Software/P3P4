@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="858.0" prefWidth="1198.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="kolonistenvancatan.SpelController">
+  <children>
+    <AnchorPane layoutX="870.0" layoutY="20.0" prefHeight="306.0" prefWidth="302.0">
+      <children>
+        <TextArea fx:id="taChatbox" layoutX="56.0" layoutY="14.0" prefHeight="165.0" prefWidth="225.0" wrapText="true" />
+        <TextField fx:id="tfChatbox" layoutX="56.0" layoutY="204.0" prefHeight="25.0" prefWidth="225.0" />
+      </children>
+    </AnchorPane>
+    <ListView id="" fx:id="lvSPelers" layoutX="7.0" layoutY="24.0" prefHeight="183.0" prefWidth="136.0" />
+    <Label layoutX="7.0" layoutY="6.0" text="Spelers:" />
+    <ImageView fx:id="imgGraan" fitHeight="100.0" fitWidth="70.0" layoutX="13.0" layoutY="744.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Images/Grondstoffen/Kaart_Graan.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="imgWol" fitHeight="100.0" fitWidth="70.0" layoutX="223.0" layoutY="744.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Images/Grondstoffen/Kaart_Wol.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="imgHout" fitHeight="100.0" fitWidth="70.0" layoutX="83.0" layoutY="744.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Images/Grondstoffen/Kaart_Hout.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="imgErts" fitHeight="100.0" fitWidth="70.0" layoutX="153.0" layoutY="744.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Images/Grondstoffen/Kaart_Erts.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="imgSteen" fitHeight="100.0" fitWidth="70.0" layoutX="293.0" layoutY="744.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Images/Grondstoffen/Kaart_Baksteen.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="imgRidder" fitHeight="100.0" fitWidth="70.0" layoutX="822.0" layoutY="736.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="imgOverwinning" fx:id="imgUitvinding" fitHeight="100.0" fitWidth="70.0" layoutX="892.0" layoutY="736.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="imgMonopolie" fx:id="imgOverwinningspunt" fitHeight="100.0" fitWidth="70.0" layoutX="962.0" layoutY="736.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="imgStratenbouw" fx:id="imgMonopolie" fitHeight="100.0" fitWidth="70.0" layoutX="1032.0" layoutY="736.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="imgUitvinding" fx:id="imgStratenbouw" fitHeight="100.0" fitWidth="70.0" layoutX="1102.0" layoutY="736.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="imgRiddermacht" fitHeight="130.0" fitWidth="150.0" layoutX="929.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Images/GRM_klein_K3.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="imgHandelsroute" fitHeight="130.0" fitWidth="150.0" layoutX="1039.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Images/LHS_klein_K3.png" />
+      </image>
+    </ImageView>
+    <Button fx:id="btnHandelen" layoutX="12.0" layoutY="257.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="136.0" text="Handelen" />
+    <Button id="btnHandelenBank" fx:id="btnHandelenbank" layoutX="13.0" layoutY="312.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="136.0" text="Handelen met bank" />
+    <Button fx:id="btnBeurt" layoutX="13.0" layoutY="373.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="136.0" text="Eindig beurt" />
+    <Button layoutX="14.0" layoutY="429.0" mnemonicParsing="false" onAction="#testConnectie" text="Button" />
+  </children>
+</AnchorPane>

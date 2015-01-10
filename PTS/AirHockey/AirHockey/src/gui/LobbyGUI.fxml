@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0000999999975" prefWidth="539.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.Lobby">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="531.0" prefWidth="532.0">
+      <children>
+        <Button fx:id="btVerzend" disable="true" layoutX="360.0" layoutY="440.0" mnemonicParsing="false" text="Verzend" />
+        <TextField layoutX="55.0" layoutY="440.0" prefWidth="281.0" />
+        <Button fx:id="btUitloggen" layoutX="255.0" layoutY="483.0" mnemonicParsing="false" onAction="#AfsluitenLobby" text="Uitloggen" />
+        <Button fx:id="btStartNieuw" layoutX="86.0" layoutY="483.0" mnemonicParsing="false" onAction="#StartNieuw" text="Start een nieuw spel" />
+        <ListView layoutX="55.0" layoutY="318.0" prefHeight="114.0" prefWidth="362.0" />
+        <ListView fx:id="lvGames" editable="true" layoutX="55.0" layoutY="14.0" prefHeight="269.0" prefWidth="362.0" />
+        <Button fx:id="btStart" layoutX="444.0" layoutY="35.0" mnemonicParsing="false" text="Start" />
+        <Button fx:id="btVerlaat" layoutX="444.0" layoutY="69.0" mnemonicParsing="false" text="Verlaat" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="kolonistenvancatan.LobbyController">
+  <children>
+    <SplitPane dividerPositions="0.677257525083612" focusTraversable="true" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <Button fx:id="btLogin" layoutX="310.0" layoutY="216.0" mnemonicParsing="false" onAction="#login" text="Login" />
+            <TextField fx:id="tfSpelernaam" layoutX="143.0" layoutY="188.0" prefWidth="158.0" />
+            <TextArea fx:id="taChat" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="337.0" prefWidth="374.0" visible="false" wrapText="true" />
+            <TextField fx:id="taChatMessage" editable="true" layoutX="14.0" layoutY="362.0" prefWidth="374.0" visible="false" />
+            <Label fx:id="lbGebruikersnaam" layoutX="56.0" layoutY="191.0" text="Gebruikersnaam" />
+            <Label fx:id="lbWachtwoord" layoutX="73.0" layoutY="215.0" text="Wachtwoord" />
+            <PasswordField fx:id="pfWachtwoord" layoutX="143.0" layoutY="215.0" prefWidth="158.0" />
+            <Label fx:id="lbOnjuist" layoutX="143.0" layoutY="236.0" text="Onjuiste gegevens, probeer nogmaals" textFill="RED" visible="true" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <ListView id="" fx:id="lvSpelers" layoutX="-5.0" layoutY="16.0" prefHeight="152.0" prefWidth="200.0" />
+            <Label layoutX="14.0" layoutY="0.0" text="Spelers:" />
+            <Label layoutX="13.0" layoutY="168.0" text="Spellen:" />
+            <ListView fx:id="lvSpellen" layoutX="-1.0" layoutY="184.0" prefHeight="152.0" prefWidth="191.0" />
+            <Button fx:id="btHost" disable="false" layoutX="35.0" layoutY="336.0" mnemonicParsing="false" onAction="#hostGame" text="Host nieuwe game" />
+            <Button fx:id="btJoin" layoutX="56.0" layoutY="374.0" mnemonicParsing="false" onAction="#joinGame" text="Join game!" visible="false" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>
